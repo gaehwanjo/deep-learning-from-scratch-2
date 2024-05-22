@@ -1,6 +1,9 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
 from common import config
 # GPU에서 실행하려면 아래 주석을 해제하세요(CuPy 필요).
 # ==============================================

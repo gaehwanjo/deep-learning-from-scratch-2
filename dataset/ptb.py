@@ -1,7 +1,10 @@
 # coding: utf-8
 import sys
 import os
-sys.path.append('..')
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
 try:
     import urllib.request
 except ImportError:

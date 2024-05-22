@@ -1,6 +1,9 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
 from common.time_layers import *
 from common.np import *  # import numpy as np
 from common.base_model import BaseModel

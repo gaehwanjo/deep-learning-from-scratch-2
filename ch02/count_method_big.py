@@ -1,6 +1,9 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
 import numpy as np
 from common.util import most_similar, create_co_matrix, ppmi
 from dataset import ptb
