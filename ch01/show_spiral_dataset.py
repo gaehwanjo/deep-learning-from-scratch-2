@@ -1,6 +1,10 @@
 # coding: utf-8
 import sys
-sys.path.append('..')  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
+import os
+# 현재 파일의 디렉터리 경로를 얻습니다.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
 from dataset import spiral
 import matplotlib.pyplot as plt
 
